@@ -16,7 +16,7 @@ print('Digite tt para terminar o chat');
 while not terminado:
     cliente.send(input('['+dataFormatada+'] ['+nick +']: ').encode('utf-8'))
     msg = cliente.recv(1024).decode('utf-8')
-    if msg == 'tt':
+    if msg == 'sair':
         terminado = True
     else:
         print(msg)
